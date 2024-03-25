@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- far far bar -->
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('https://lh3.googleusercontent.com/pw/AP1GczNjGh_NN3pYibYrlMzguf9_tQss7RgkP9Ord6udHNLKupENaECI98htz6nWTsWt9cg9QphhnwqqSWNMoXLycI70pkRTqPWFiY44e6T97Wku-uFZHA=w2400');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-padding">
+  <a class="w3-bar-item w3-button w3-padding w3-hide-large w3-right" href="javascript:void(0)"
+                onclick="myFunction()" title="Toggle Navigation Menu" id="menuButton">
+                <i class="fa fa-bars"></i>
+            </a>
+  <a href="#" class="w3-bar-item w3-button">株式会社ディック ソリューション エンジニアリング</a>
+    <div class="w3-right w3-hide-small w3-hide-medium">
+    	<a href="#" class="w3-bar-item w3-button">会社情報</a>
+    	<a href="#menu" class="w3-bar-item w3-button">事業案内</a>
+    	<a href="#about" class="w3-bar-item w3-button">採用サイト</a>
+    	<a href="#myMap" class="w3-bar-item w3-button">お問い合わせ</a>
+    </div>
+  </div>
+</div>
+<!-- Navbar on small screens-->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large  w3-top" style="margin-top:56px">
+        <a href="#会社情報"
+            class="w3-bar-item w3-button" onclick="myFunction()">会社情報</a>
+        <a href="#事業案内" class="w3-bar-item w3-button"
+            onclick="myFunction()">事業案内</a>
+        <a href="#採用サイト" class="w3-bar-item w3-button"
+            onclick="myFunction()">採用サイト</a>
+        <a href="お問い合わせ"
+            class="w3-bar-item w3-button" onclick="myFunction()">お問い合わせ</a>
+        
+    </div>
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-middle">
+    <h1 class="w3-xxlarge">夢はいつまでも続く</h1>
+    <hr class="w3-border-white" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">We Support Rugby <br>We Suport Tsutsumi Honoka</p>
+  </div>
+  
+</div>
+
+</body>
+<script>
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        var menuButton = document.getElementById("menuButton");
+
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            menuButton.innerHTML = "<strong>&#10006;</strong>"; // Bold "X" when menu is shown
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+            menuButton.innerHTML = "<i class='fa fa-bars'></i>"; // Revert to bars icon when menu is hidden
+        }
+    }
+    //Google analytics//
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-DYJX7T3RK0');
+
+</script>
+</html>
